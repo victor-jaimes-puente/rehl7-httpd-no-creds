@@ -7,7 +7,7 @@ RUN yum -y install git
 RUN yum -y update
 RUN git clone https://github.com/victor-jaimes-puente/rehl7-httpd-no-creds.git
 RUN rm -f /var/www/html/index.html
-RUN cp /centos-httpd/index.html /var/www/html/index.html
+RUN cp /rehl7-httpd-no-creds/index.html /var/www/html/index.html
 
 
 EXPOSE 80
